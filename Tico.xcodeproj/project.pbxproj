@@ -13,6 +13,7 @@
 		D9F329842879228E002C5859 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F329832879228E002C5859 /* ContentView.swift */; };
 		D9F3298628792290002C5859 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9F3298528792290002C5859 /* Assets.xcassets */; };
 		D9F3298928792290002C5859 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9F3298828792290002C5859 /* Preview Assets.xcassets */; };
+		D9F3299028792FC8002C5859 /* NewFriendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F3298F28792FC8002C5859 /* NewFriendView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		D9F329832879228E002C5859 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D9F3298528792290002C5859 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9F3298828792290002C5859 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D9F3298F28792FC8002C5859 /* NewFriendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFriendView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				D9F329832879228E002C5859 /* ContentView.swift */,
 				2E90174728792509003ED86C /* FriendDetailView.swift */,
 				2E901745287924E3003ED86C /* Friend.swift */,
+				D9F3298F28792FC8002C5859 /* NewFriendView.swift */,
 				D9F3298528792290002C5859 /* Assets.xcassets */,
 				D9F3298728792290002C5859 /* Preview Content */,
 			);
@@ -143,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9F3299028792FC8002C5859 /* NewFriendView.swift in Sources */,
 				2E901746287924E3003ED86C /* Friend.swift in Sources */,
 				D9F329842879228E002C5859 /* ContentView.swift in Sources */,
 				D9F329822879228E002C5859 /* TicoApp.swift in Sources */,

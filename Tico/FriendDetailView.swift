@@ -13,7 +13,7 @@ struct FriendDetailView: View {
     @State private var defenceValue: Double = 0
     
     let profilePicSize: CGFloat = 250
-    var friend: Friend
+    @Binding var friend: Friend
     
     var body: some View {
         VStack(spacing: 0) {
@@ -76,6 +76,6 @@ struct FriendDetailView: View {
 
 struct FriendDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        FriendDetailView(friend: Friend(name: "person1", school: "too cool for school", dateOfBirth: 1, monthOfBirth: 1, yearOfBirth: 1, icon: "bolt.fill"))
+        FriendDetailView(friend: .constant(Friend(name: "person1", school: "too cool for school", dateOfBirth: "1", monthOfBirth: "1", yearOfBirth: "1", icon: "bolt.fill")))
     }
 }

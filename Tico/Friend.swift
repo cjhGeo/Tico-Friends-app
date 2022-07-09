@@ -12,8 +12,7 @@ struct Friend: Identifiable {
     var id = UUID()
     
     // Facts
-    var name, school: String
-    var dateOfBirth, monthOfBirth, yearOfBirth: Int
+    var name, school, dateOfBirth, monthOfBirth, yearOfBirth: String
     
     // Images
     var icon: String
