@@ -9,6 +9,9 @@ import SwiftUI
 
 struct FriendDetailView: View {
     
+    @State private var attackValue: Double = 0
+    @State private var defenceValue: Double = 0
+    
     let profilePicSize: CGFloat = 250
     var friend: Friend
     
@@ -49,6 +52,21 @@ struct FriendDetailView: View {
                 .offset(y: 15)
             
             Text("\(friend.name) was born on \(friend.dateOfBirth) / \(friend.monthOfBirth) / \(String(friend.yearOfBirth))")
+            
+            Slider(value: $attackValue, in: 0...100)
+                .padding(EdgeInsets(top: 30, leading: 30, bottom: 0, trailing: 30))
+            Text("Attack Value")
+                .padding(EdgeInsets(top: 10, leading: 30, bottom: 0, trailing: 20))
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .foregroundColor(.gray)
+            Slider(value: $defenceValue, in: 0...100)
+                .padding(EdgeInsets(top: 30, leading: 30, bottom: 0, trailing: 20))
+            Text("Defence Value")
+                .padding(EdgeInsets(top: 10, leading: 30, bottom: 0, trailing: 30))
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .foregroundColor(.gray)
+            
+
             
             Spacer()
         }
