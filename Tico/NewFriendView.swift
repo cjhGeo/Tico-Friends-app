@@ -11,9 +11,8 @@ struct NewFriendView: View {
     @State var name = ""
     @State var school = ""
     @State var dateOfBirth = ""
-    @State var monthOfBirth = ""
-    @State var yearOfBirth = ""
     @State var icon = ""
+    @State var element = ""
     @Binding var friends: [Friend]
     
     @Environment(\.dismiss) var dismiss
@@ -22,14 +21,13 @@ struct NewFriendView: View {
         Form {
             TextField("Name", text: $name)
             TextField("School", text: $school)
-            TextField("Date of birth", text: $dateOfBirth)
-            TextField("Month of birth", text: $monthOfBirth)
-            TextField("Year of birth", text: $yearOfBirth)
+            TextField("Birthday: dd/mm/yyyy", text: $dateOfBirth)
             TextField("Icon", text: $icon)
+            TextField("Element", text: $element)
             
             Button("Save Todo") {
                 
-                friends.append(Friend(name: name, school: school, dateOfBirth: dateOfBirth, monthOfBirth: monthOfBirth, yearOfBirth: yearOfBirth, icon: icon))
+                friends.append(Friend(name: name, school: school, dateOfBirth: dateOfBirth, icon: icon, element: element))
                 dismiss()
             }
         }

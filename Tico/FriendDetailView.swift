@@ -48,10 +48,9 @@ struct FriendDetailView: View {
             
             Text("\(Image(systemName: friend.icon)) \(friend.name)")
                 .font(.system(size: 24))
-                .padding()
-                .offset(y: 15)
+                .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 10))
             
-            Text("\(friend.name) was born on \(friend.dateOfBirth) / \(friend.monthOfBirth) / \(String(friend.yearOfBirth))")
+            Text("\(friend.name) was born on \(friend.dateOfBirth)")
             
             Slider(value: $attackValue, in: 0...100)
                 .padding(EdgeInsets(top: 30, leading: 30, bottom: 0, trailing: 30))
@@ -65,9 +64,6 @@ struct FriendDetailView: View {
                 .padding(EdgeInsets(top: 10, leading: 30, bottom: 0, trailing: 30))
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .foregroundColor(.gray)
-            
-
-            
             Spacer()
         }
         .navigationTitle(friend.name)
@@ -76,6 +72,6 @@ struct FriendDetailView: View {
 
 struct FriendDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        FriendDetailView(friend: .constant(Friend(name: "person1", school: "too cool for school", dateOfBirth: "1", monthOfBirth: "1", yearOfBirth: "1", icon: "bolt.fill")))
+        FriendDetailView(friend: .constant(Friend(name: "person1", school: "too cool for school", dateOfBirth: "1", icon: "bolt.fill", element: "fire.fill")))
     }
 }

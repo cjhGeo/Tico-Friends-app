@@ -10,8 +10,16 @@ import SwiftUI
 struct ContentView: View {
     
     @State var friends = [
-        Friend(name: "person1", school: "too cool for school", dateOfBirth: "1", monthOfBirth: "1", yearOfBirth: "1", icon: "bolt.fill"),
-        Friend(name: "person2", school: "some school", dateOfBirth: "2", monthOfBirth: "2", yearOfBirth: "2", icon: "pawprint.circle.fill")
+        Friend(name: "person1",
+               school: "too cool for school",
+               dateOfBirth: "11/1/1111",
+               icon: "bolt.fill",
+               element: "flame.fill"),
+        Friend(name: "person2",
+               school: "some school",
+               dateOfBirth: "22/2/2222",
+               icon: "pawprint.circle.fill",
+               element: "snowflake")
     ]
     
     @State var isSheetPresented = false

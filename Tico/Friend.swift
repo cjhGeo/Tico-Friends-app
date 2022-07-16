@@ -7,14 +7,16 @@
 
 import Foundation
 
-struct Friend: Identifiable {
+struct Friend: Identifiable, Codable {
     
     var id = UUID()
     
     // Facts
-    var name, school, dateOfBirth, monthOfBirth, yearOfBirth: String
+    var name, school, dateOfBirth: String
     
     // Images
     var icon: String
     
+    // Pokemon Type
+    var element: String
 }
